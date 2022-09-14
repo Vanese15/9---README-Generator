@@ -36,7 +36,10 @@ const questions = [
 
 //funtion to prompt user to answer questions
 const promptUser = () => {
-    return inquirer.prompt(questions)
+    inquirer.prompt(questions)
+    .then (data => {
+console.log(data)
+    });
 }
 
 
@@ -47,7 +50,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-
+promptUser()
 }
 
 // Function call to initialize app
