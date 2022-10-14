@@ -7,19 +7,33 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: "input",
-        message: "What is project title?",
+        message: "What is name of your project?",
         name: "title"
     },
     {
         type: "input",
-        message: "Please provide a short description of your project",
+        message: "Please provide a short description of your project.",
         name: "description",
     },
     {
         type: "input",
-        message: "What command should be used in invoke dependencies?",
+        message: "How is the app used?",
+        name: "use",
+    },
+    {
+        type: "input",
+        message: "How is the app installed?",
         name: "installation",
-        default: "npm i",
+    },
+    {
+        type: "input",
+        message: "How can issues be reported?",
+        name: "issues",
+    },
+    {
+        type: "input",
+        message: "How can contributions be made to the app?",
+        name: "contributions",
     },
     {
         type: "input",
@@ -31,7 +45,6 @@ const questions = [
         message: "What is your github username?",
         name: "username",
     }
-
 ];
 
 //funtion to prompt user to answer questions
@@ -43,15 +56,25 @@ console.log(data)
 }
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    return writeToFile(fileName, data);
-}
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {
+//     fs.writeFile(fileName, data, err => {
+//         if (err) {
+//             return console.log(err);
+//         }
 
-// TODO: Create a function to initialize app
-function init() {
-promptUser()
-}
+//         console.log("Your README.md file has been created successfully!")
+//     });
 
-// Function call to initialize app
-init();
+// }
+
+// // TODO: Create a function to initialize app
+// // function init() {
+// // inquirer.promptUser()
+
+
+// // }
+
+// // // Function call to initialize app
+// // init();
+
