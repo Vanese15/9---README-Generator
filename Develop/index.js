@@ -4,6 +4,10 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
+const promptUser = () => {
+    return inquirer.prompt(questions)
+}
+
 const questions = [
     {
         type: "input",
@@ -27,8 +31,8 @@ const questions = [
     },
     {
         type: "input",
-        message: "How can issues be reported?",
-        name: "issues",
+        message: "Do you have any questions?",
+        name: "questions",
     },
     {
         type: "input",
@@ -47,34 +51,21 @@ const questions = [
     }
 ];
 
-//funtion to prompt user to answer questions
-const promptUser = () => {
-    inquirer.prompt(questions)
-    .then (data => {
-console.log(data)
-    });
+
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.appendFile(`${fileName}.md`, data, 
+    (err) => (err) ? console.error(err) : console.log(`${fileName}.md has been created successfully!`))
+
 }
 
+// TODO: Create a function to initialize app
+async function init() {
+    let answers = await promptUser();
+    writeToFile((answers.fileName),(generateMarkdown(answers)));
+}
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFile(fileName, data, err => {
-//         if (err) {
-//             return console.log(err);
-//         }
-
-//         console.log("Your README.md file has been created successfully!")
-//     });
-
-// }
-
-// // TODO: Create a function to initialize app
-// // function init() {
-// // inquirer.promptUser()
-
-
-// // }
-
-// // // Function call to initialize app
-// // init();
+// Function call to initialize app
+init();
 

@@ -8,8 +8,8 @@
   "author": "exit",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^6.3.1",
+    "license": "^1.0.3"
   },
-  "devDependencies": {},
   "description": ""
 }
