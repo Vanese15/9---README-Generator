@@ -1,4 +1,3 @@
-
 # 9---README-Generator
 
 When creating an open source project on github, where contributions from other developers is encouraged, it is important to have a README for the app.  The README should include, title, a short description/functionality of the app so users know how to test and how to provide useful feedback.  README should also include contact information on how I can be reached if there are any questions, comments or concerns.
@@ -21,4 +20,5 @@ THEN users can select a license from the list
 WHEN all the prompts have been answered
 THEN an undefined md will be generated with a Table of Contents for organization
 
-![3](https://user-images.githubusercontent.com/16092802/196040101-759abaf2-01aa-4c5c-a321-dbff3ce6a39a.png)
+![3](https://user-images.githubusercontent.com/16092802/196040152-85813b25-073a-469b-b9dd-7978801c6973.png)
+![4](https://user-images.githubusercontent.com/16092802/196040154-6410496a-e3ff-42cc-a9f6-cd9a75e99f03.png)
