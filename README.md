@@ -20,4 +20,7 @@ THEN users can select a license from the list
 WHEN all the prompts have been answered
 THEN an undefined md will be generated with a Table of Contents for organization
 
+![3](https://user-images.githubusercontent.com/16092802/196039999-2e9cf945-4c52-465b-8666-5e0ec47e0d48.png)
+
+![4](https://user-images.githubusercontent.com/16092802/196040019-0d84333b-093c-4342-934e-9fb394b088d8.png)
 
