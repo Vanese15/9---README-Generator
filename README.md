@@ -21,6 +21,3 @@ WHEN all the prompts have been answered
 THEN an undefined md will be generated with a Table of Contents for organization
 
 
-![image](https://user-images.githubusercontent.com/16092802/196039595-f9c79c1d-5b39-49bf-a220-21f338c58af1.png)
-
-
